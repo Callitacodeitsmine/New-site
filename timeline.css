@@ -1,0 +1,180 @@
+/* styles.css */
+
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider2{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide-container {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    user-select: none;
+    z-index: 10; /* Ensure arrows are above the slides */
+}
+
+.arrowtwo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: whitesmoke;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    user-select: none;
+    z-index: 10; /* Ensure arrows are above the slides */
+}
+
+.arrowtwo:hover {
+    background-color: #ddd;
+}
+
+.prev {
+    left: 10px; /* Adjusted from 20px to 10px to move the arrow more inside */
+}
+
+.next {
+    right: 10px; /* Adjusted from 20px to 10px to move the arrow more inside */
+}
+
+.arrow:hover {
+    background-color: #ddd;
+}
+
+/* styles.css */
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.box {
+    width: 300px; /* fixed width */
+    height: 500px; /* fixed height */
+    overflow: hidden; /* Ensures content does not spill out */
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    border: 1px solid #ccc; /* Subtle border for definition */
+    margin: 10px; /* Space between boxes */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Soft shadow for 3D effect */
+    border-radius: 7px; /* Rounded corners */
+    transition: transform 0.3s ease-in-out; /* Smooth transformation on hover */
+}
+
+.box-media {
+    flex: 0 0 70%; /* Allocates 70% of the box height to media */
+    width: 100%; /* Uses the full width of the box */
+    display: flex;
+    align-items: center; /* Centers content vertically in the media section */
+    justify-content: center; /* Centers content horizontally in the media section */
+    overflow: hidden; /* Hides any overflow, important for images/videos */
+}
+
+.box-description {
+    flex: 0 0 30%; /* Allocates 30% of the box height to description */
+    width: 100%; /* Uses the full width of the box */
+    padding: 10px; /* Padding for some spacing inside the description area */
+    background: #f9f9f9; /* Slightly different background to distinguish from media */
+    box-sizing: border-box; /* Ensures padding does not affect the specified width */
+    display: flex;
+    align-items: center; /* Centers text vertically */
+    justify-content: center; /* Centers text horizontally */
+    text-align: center; /* Ensures text is aligned to the center if multiple lines */
+}
+
+
+.box:hover {
+    transform: scale(1.05); /* Slightly enlarge boxes on hover */
+}
+
+.box video {
+    width: 100%; /* Make video fill the box */
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the box without distortion */
+}
+
+.left{
+    justify-content: flex-start;
+}
+
+.right{
+    justify-content: flex-end;
+}
+
+.image-slider {
+    position: relative;
+    width: 100%; /* or max-width as needed */
+    overflow: hidden;
+}
+
+.image-slide-container {
+    display: flex;
+    transition: transform 0.3s ease;
+    width: calc(100% * 4); /* Adjust based on the number of slides */
+}
+
+.image-slide {
+    width: calc(100% / 4); /* Each slide should have equal width */
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-slide img {
+    max-width: 100%; /* Limits image width to prevent overflow */
+    height: auto; /* Maintain aspect ratio */
+    filter: drop-shadow(5px 5px 10px #555);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for transform and shadow */
+}
+
+/* Hover effect */
+.image-slide img:hover {
+    transform: scale(1.15); /* Slightly enlarges the image */
+    filter: drop-shadow(5px 5px 10px #000);
+}
+
+.colo{
+    background-color: #0000;
+    height: 60px;
+}
+
+a button{
+    background-color: #0000;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    text-size-adjust: 6px;
+}

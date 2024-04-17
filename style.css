@@ -1,0 +1,396 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  position: relative;
+  overflow: hidden;
+}
+#page {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f1f1f1;
+}
+#page1 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f1f1f1;
+}
+#page2 {
+  position: relative;
+  height: 100%;
+  width: 100vw;
+}
+#page3 {
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  background-color: #000000dc;
+}
+#page4 {
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  background-color: #000;
+}
+
+#page5 {
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  background-color: #0000;
+  text-decoration: color(#0000);
+}
+canvas {
+  max-width: 100vw;
+  max-height: 100vh;
+}
+#loop {
+  display: flex;
+  position: absolute;
+  top: 30%;
+  height: 25%;
+  width: 100%;
+  font-size: 100px;
+  white-space: nowrap;
+  font-family: gilroy;
+}
+#loop > h1 {
+  font-weight: 400;
+  animation-name: anim;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+#loop > h1 > span {
+  -webkit-text-stroke: 1.2px #000;
+  color: transparent;
+  font-weight: 500;
+}
+@keyframes anim {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7%;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  padding: 0px 30px;
+}
+#nav > h3 {
+  font-family: gilroy;
+  font-weight: 400;
+  font-size: 22px;
+}
+#nav > button {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+#page > h3 {
+  position: absolute;
+  top: 55%;
+  font-family: gilroy;
+  font-weight: 400;
+  color: #7c7c7c;
+  left: 5%;
+}
+#page > h4 {
+  position: absolute;
+  top: 62%;
+  left: 25%;
+  font-family: gilroy;
+  font-weight: 500;
+}
+#page1 > #right-text {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+#page1 > #right-text > h3 {
+  font-weight: 400;
+  color: #7c7c7c;
+}
+#page1 > #right-text > h1 {
+  line-height: 1.5;
+  font-size: 50px;
+}
+#page1 > #left-text {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  text-align: end;
+}
+#page1 > #left-text > h1 {
+  font-size: 50px;
+  line-height: 1.5;
+}
+#page1 > #left-text > h3 {
+  color: #7c7c7c;
+  font-weight: 400;
+}
+#page2 > #text1 {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+#page2 > #text1 > h3 {
+  color: #7c7c7c;
+  font-weight: 400;
+}
+#page2 > #text1 > h1 {
+  font-size: 60px;
+  line-height: 1.5;
+}
+#page2 > #text2 {
+  position: absolute;
+  top: 55%;
+  right: 10%;
+  text-align: end;
+}
+#page2 > #text2 > p {
+  color: #7c7c7c;
+  font-weight: 400;
+}
+#page3 > #text3 {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  text-align: end;
+}
+#page3 > #text3 > h3 {
+  color: #7c7c7c;
+  font-weight: 400;
+}
+#page3 > #text3 > h1 {
+  font-size: 70px;
+}
+
+
+/* Timeline */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat";
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: #111;
+}
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 20px;
+  background-color: #1e1f22;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.timeline-content i{
+  font-size: 12px;
+  margin-right: 10px;
+  float: right;
+  padding: 7px;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: aqua;
+  }
+}
+
+/* Video */
+
+.video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Styles for the menu items */
+.menu-items {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 998;
+  cursor: pointer;
+}
+
+/* Styles for individual menu links */
+.menu-item {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#menu-item {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Hover effect for menu links */
+.menu-item:hover {
+  background-color: #444;
+  border-radius: 3px;
+}
+
+/* Scroll AutoL */
+
+.sides{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f1f1f1;
+}
+.mini_box{
+  width: 100%;
+  height: 50vh;
+  display: flexbox;
+  justify-content: space-around;
+  align-items: center;
+  background: #000;
+}
+.mini_box_a{
+  width: 50%;
+  height: 50vh;
+  display: flexbox;
+  justify-content: space-around;
+  align-items: center;
+  background: #000000;
+
+}
+.mini_box_b{
+  width: 50%;
+  height: 50vh;
+  display: flexbox;
+  justify-content: space-around;
+  align-items: center;
+  background: #000000;
+}
+
+.call a{
+  cursor: pointer;
+}
+
